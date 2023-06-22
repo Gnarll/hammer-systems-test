@@ -84,7 +84,6 @@ const getTopNavMenuItem = (navItem) =>
 
 const SideNavContent = (props) => {
   const { routeInfo, hideGroupTitle } = props;
-  console.log(1, routeInfo, 2, hideGroupTitle);
   const sideNavTheme = useSelector((state) => state.theme.sideNavTheme);
 
   const menuItems = useMemo(() => getSideNavMenuItem(navigationConfig), []);
