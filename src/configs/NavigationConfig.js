@@ -1,4 +1,8 @@
-import { DashboardOutlined, UserOutlined } from "@ant-design/icons";
+import {
+  DashboardOutlined,
+  UserOutlined,
+  BorderOuterOutlined,
+} from "@ant-design/icons";
 import { APP_PREFIX_PATH } from "configs/AppConfig";
 
 const dashBoardNavTree = [
@@ -36,6 +40,14 @@ const pagesNavTree = [
         path: `${APP_PREFIX_PATH}/pages/clients`,
         title: "Clients",
         icon: UserOutlined,
+        breadcrumb: false,
+        submenu: [],
+      },
+      {
+        key: "pages-map",
+        path: `${APP_PREFIX_PATH}/pages/map`,
+        title: "Map",
+        icon: BorderOuterOutlined,
         breadcrumb: false,
         submenu: [],
       },

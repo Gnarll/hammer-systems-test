@@ -36,4 +36,9 @@ export const protectedRoutes = [
     path: `${APP_PREFIX_PATH}/pages/clients`,
     component: React.lazy(() => import("views/app-views/pages/user-list")),
   },
+  {
+    key: "page.map",
+    path: `${APP_PREFIX_PATH}/pages/map`,
+    component: React.lazy(() => import("views/app-views/pages/restaurant-map")),
+  },
 ];
